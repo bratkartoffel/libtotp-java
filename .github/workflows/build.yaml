@@ -46,7 +46,7 @@ jobs:
       - uses: codecov/codecov-action@7f8b4b4bde536c465e797be725718b88c5d95e0e # v5.1.1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-      - uses: mikepenz/action-junit-report@a427a90771729d8f85b6ab0cdaa1a5929cab985d # v5
+      - uses: mikepenz/action-junit-report@992d97d6eb2e5f3de985fbf9df6a04386874114d # v5
         if: always() # always run even if the previous step fails
         with:
           report_paths: 'build/test-results/test/TEST-*.xml'
